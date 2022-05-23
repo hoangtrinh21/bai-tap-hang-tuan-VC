@@ -38,7 +38,7 @@ public class Bai1 {
         Random random = new Random();
         int tmp;
         for (int i = 0; i < n; i++) {
-            tmp = (random.nextInt() % Integer.MAX_VALUE - Integer.MIN_VALUE + 1) + Integer.MIN_VALUE;
+            tmp = (random.nextInt() % Integer.MAX_VALUE - Integer.MIN_VALUE) + Integer.MIN_VALUE;
             rndList.add(tmp);
         }
         return rndList;
@@ -50,6 +50,6 @@ public class Bai1 {
         sort(a, 0, a.size() - 1);
         System.out.println(a.get(0) + a.get(1));
         long e = System.currentTimeMillis();
-        System.out.println(e - s);
+        System.out.println(e - s + "ms");
     }
 }
