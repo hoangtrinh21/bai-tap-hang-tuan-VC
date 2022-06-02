@@ -2,6 +2,15 @@ package my.bai3;
 
 import java.util.*;
 
+class Node {
+    int key;
+    Node next;
+
+    Node(int k) {
+        key = k;
+        next = null;
+    }
+}
 public class Bai3 {
     public static void main(String[] args) {
         int size = 10;
